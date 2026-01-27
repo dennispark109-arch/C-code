@@ -1,0 +1,10 @@
+#include <string>
+
+int countVowels(std::string str) {
+    int count = 0;
+    std::string vowels = "aeiouAEIOU";
+    for (char c : str) {
+        if (vowels.find(c) != std::string::npos) count++;
+    }
+    return count;
+}
