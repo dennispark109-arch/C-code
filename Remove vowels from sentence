@@ -1,0 +1,10 @@
+std::string removeVowels(std::string sentence) {
+    std::string result = "";
+    std::string vowels = "aeiouAEIOU";
+    for (char c : sentence) {
+        if (vowels.find(c) == std::string::npos) {
+            result += c;
+        }
+    }
+    return result;
+}
