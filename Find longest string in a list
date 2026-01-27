@@ -1,0 +1,8 @@
+std::string longestString(std::vector<std::string> list) {
+    if (list.empty()) return "";
+    std::string longest = list[0];
+    for (const std::string& s : list) {
+        if (s.length() > longest.length()) longest = s;
+    }
+    return longest;
+}
