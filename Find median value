@@ -1,0 +1,12 @@
+#include <algorithm>
+
+double getMedian(std::vector<int> nums) {
+    if (nums.empty()) return 0;
+    std::sort(nums.begin(), nums.end());
+    size_t size = nums.size();
+    if (size % 2 == 0) {
+        return (nums[size/2 - 1] + nums[size/2]) / 2.0;
+    } else {
+        return nums[size/2];
+    }
+}
