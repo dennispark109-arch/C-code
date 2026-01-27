@@ -1,0 +1,8 @@
+#include <vector>
+
+double getAverage(std::vector<int> nums) {
+    if (nums.empty()) return 0.0;
+    double sum = 0;
+    for (int n : nums) sum += n;
+    return sum / nums.size();
+}
