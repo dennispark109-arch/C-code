@@ -1,0 +1,4 @@
+std::vector<std::string> sortStrings(std::vector<std::string> list) {
+    std::sort(list.begin(), list.end());
+    return list;
+}
