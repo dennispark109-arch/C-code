@@ -1,0 +1,7 @@
+std::vector<int> removeEvens(std::vector<int> nums) {
+    std::vector<int> odds;
+    for (int n : nums) {
+        if (n % 2 != 0) odds.push_back(n);
+    }
+    return odds;
+}
